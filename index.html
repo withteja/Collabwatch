@@ -20,7 +20,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Vynchronize</title>
+    <title>CollabWatch</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -41,9 +41,9 @@
     <link href="css/mobile-style.css" rel="stylesheet">
     <link href="css/html5player.css" rel="stylesheet">
 
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favi">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/fav">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/fa">
 
 </head>
 
@@ -51,11 +51,9 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#Home"><img src="img/logo.png" alt="Vynchronize logo" height="40" width="40"> Vynchronize</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="container ">
+            <a class="navbar-brand js-scroll-trigger" href="#Home"> CollabWatch</a>
+           
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <!-- <li class="nav-item active">
@@ -63,25 +61,7 @@
                 <span class="sr-only">(current)</span>
               </a>
             </li> -->
-                    <li class="nav-item">
-                        <a id="chat-nav" class="nav-link js-scroll-trigger hide" href="#messageArea">Chatroom</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="about-nav" class="nav-link js-scroll-trigger hide" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="contact-nav" class="nav-link js-scroll-trigger hide" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a target="_blank" rel="noopener noreferrer" class="nav-link js-scroll-trigger" href="https://www.facebook.com/vynchronize">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a target="_blank" rel="noopener noreferrer" class="nav-link js-scroll-trigger" href="https://github.com/kyle8998/Vynchronize">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
+                    
                 </ul>
             </div>
         </div>
@@ -96,13 +76,15 @@
 
         <!-- User Form (First Page) -->
         <div id="userFormArea" class="row">
-            <div class="col-md-12">
+            <div class="col-md-12 bg-dark">
                 <!-- ADD DESCRIPTION HERE -->
-                <h2>Welcome to Vynchronize</h2>
-                <p class="lead">The hot new video synchronization platform used to watch videos in realtime with friends!</p>
+                <h2>Welcome to CollabWatch</h2>
+                <p style= "font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif  ;">Tired of watching lectures alone?</br>
+                    Watch lectures in sync with friends/classmantes and also chat, discuss, make notes together!
+                </p>
                 <hr style="height:20pt; visibility:hidden;" />
 
-                <h2> Join a Room! </h2>
+                <h2> Create/Join classroom </h2>
                 <form id="userForm">
                     <div class="form-group">
                         <p style="color:red; margin-bottom: 0px" id="missinginfo"></p>
@@ -110,13 +92,11 @@
                         <input class="form-control" id="username" />
                         <br />
                         <p style="color:red; margin-bottom: 0px" id="missinginfo2"></p>
-                        <label>Enter Room ID (Default 1)</label>
-                        <button type="button" onClick="randomroom()" class="btn btn-primary random">Random</button>
-                        <br/>
+                        <label>ID to join class</label>
                         <input class="form-control" id="roomnum" />
                         <br/>
 
-                        <input style="margin-top: 10px;" type="submit" class="btn btn-primary" value="Enter" />
+                        <input style="margin-top: 10px;margin-left: 500px" type="submit" class="btn btn-primary" value="Enter" />
                         <hr style="height:65pt; visibility:hidden;" />
                     </div>
                 </form>
@@ -407,17 +387,17 @@
     <!-- /.container -->
 
     <!-- Footer -->
-    <footer id="footer" class="py-5 bg-dark footer">
+    <footer id="footer" class="py-5 color:#007bff footer">
         <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; Vynchronize 2018</p>
+            <p class="m-0 text-center text-white"> CollabWatch 2020 HackIllionis</p>
         </div>
         <!-- /.container -->
     </footer>
 
     <script>
+       
         var socket = io.connect();
         var roomnum = 1
-        var id = "M7lc1UVf-VE"
         var username = ""
         // Don't allow trailing or leading whitespace!
         var nosymbols = new RegExp("^(([a-zA-Z0-9_-][a-zA-Z0-9 _-]*[a-zA-Z0-9_-])|([a-zA-Z0-9_-]*))$");
@@ -547,8 +527,8 @@
 
                             // Sets the invite link (roomnum)
                             // document.getElementById('invite').innerHTML = "vynchronize.herokuapp.com/" + roomnum
-                            document.getElementById("inv_input").value = "vynchronize.herokuapp.com/" + roomnum
-                            history.pushState('', 'Vynchronize', roomnum);
+                            // document.getElementById("inv_input").value = "vynchronize.herokuapp.com/" + roomnum
+                            // history.pushState('', 'Vynchronize', roomnum);
 
                         }
                     });
