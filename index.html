@@ -131,18 +131,21 @@
                     <div class="nonmobile-hide"><b>Note: </b>Only the host can control the video using the native video player controls </div>
                     <div class="mobile-hide"><b>Mobile User</b>, please play the video once manually to give the browser permission to control the video player. </div>
                     <!-- <hr style="height:0pt; visibility:hidden;" /> -->
-
+                        <!-- // remove this drop down menu ^ -->
                     <div style="margin: 10px" class="dropdown">
                         <button style="background-color: #007bff" class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="fas fa-video"></i> Player
                         </button>
+                       
                         <div class="form-control dropdown-menu scrollable-menu" aria-labelledby="dropdownMenuButton">
                             <a class="dropdown-item" onclick="changePlayer(roomnum, 0)"><i class="fab fa-youtube"></i> YouTube</a>
                             <a class="dropdown-item" onclick="changePlayer(roomnum, 1)"><img width="14px" height="14px" src="img/dailymotion-logo.svg" alt="Daily Motion Logo"> Daily Motion</a>
                             <a class="dropdown-item" onclick="changePlayer(roomnum, 2)"><i class="fab fa-vimeo"></i> Vimeo</a>
                             <a class="dropdown-item" onclick="changePlayer(roomnum, 3)"><i class="fas fa-file-video"></i> HTML5 Player (.mp4/.webm) (Beta)</a>
                         </div>
+                       
                     </div>
+                     <!-- remove ^ -->
 
 
 
@@ -156,8 +159,9 @@
 
                     <div id='playerArea'>
                         <div class="video" id="player"></div>
-                        <!-- <iframe class="video" id="player" allowfullscreen="0" rel="0" width="640" height="360" src="https://www.youtube.com/embed/M7lc1UVf-VE?enablejsapi=1" frameborder="1" style="border: solid 4px #37474F"></iframe> -->
-                    </div>
+                           </div>
+
+                           <!--  remove ^ -->
                     <div id='dailyArea'>
                         <div class="video" id="player-daily"></div>
                     </div>
@@ -165,6 +169,7 @@
                         <iframe class="video" id="player-vimeo" src="https://player.vimeo.com/video/76979871" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                     </div>
                     <div id='HTML5Area'>
+
                         <div class="html5player">
                             <video src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" width="640" height="360" class="video html5video" id="html5src" controls>
                             <!-- <source src="video/sintel-short.mp4" type="video/mp4">
@@ -172,7 +177,9 @@
                             <!-- fallback content here -->
                             </video>
                         </div>
+
                     </div>
+                    <!-- remove ^ -->
 
                     <!----------------------------------- PLAYER AREA ----------------------------------->
                     <!-- <hr> -->
@@ -181,32 +188,44 @@
 
                         <button id="syncbutton" onclick="syncVideo(roomnum);syncAlert()" style="margin-top:.5rem" class="btn btn-primary"><i class="fa fa-sync"></i> Sync</button>
 
+                         <!-- remove ^ -->
                         <button id="loveButton" onclick="loveLive(roomnum)" style="margin-top:.5rem" class="btn btn-primary"><i class="far fa-heart"></i> Random K-pop</button>
+                        <!-- remove ^ -->
                         <!-- <br/> -->
+                        <!-- remove ^ -->
                         <button id="hostbutton" onclick="changeHost(roomnum)" style="margin-top:.5rem" class="btn btn-primary"><i class="fas fa-users"></i> Make me the host!</button>
+                        <!-- remove ^ -->
                         <!-- Turn off the lights -->
+                        <!-- remove ^ -->
                         <button id="lightButton" style="margin-top:.5rem" class="btn btn-primary switch"><i style="pointer-events:none;" class="fas fa-lightbulb"></i></button>
+                        <!-- remove ^ -->
                     </div>
 
                     <!-- Div for lights off! -->
                     <div id='persoff'></div>
 
+                    <!-- for inputting the URL/video id -->
                     <div class="topbotmargins">
                         <input type="Video" style="max-width: 200px; margin-right: .5rem; margin-bottom: .5rem; float: left;" class="form-control" id="inputVideoId" placeholder="Video ID / URL">
+                       <!-- remove ^ -->
                         <button id="enqueueButton" onclick="enqueueVideoParse(roomnum)" class="btn btn-primary"><i class="fas fa-plus"></i> Add to Queue</button>
                         <button id="emptyButton" onclick="emptyQueue(roomnum)" class="btn btn-primary"><i class="fas fa-trash"></i> Empty Queue</button>
+                    <!-- remove ^ -->
                     </div>
+                    
                     <div>
                         <!-- <a class="ghost-button-full-color"><i class="far fa-times-circle"></i></a> -->
                         <button id="changeButton" onclick="changeVideoParse(roomnum)" class="btn btn-primary"><i class="fas fa-exchange-alt"></i> Change Video</button>
+                        <!-- remove ^ -->
                         <button id="previousButton" onclick="prevVideo(roomnum)" class="btn btn-primary"><i class="fas fa-step-backward"></i> Previous</button>
                         <button id="nextButton" onclick="playNext(roomnum)" class="btn btn-primary"><i class="fas fa-step-forward"></i> Next</button>
-
+                        <!-- remove ^ -->
                         <br/>
 
                     </div>
                     <!-- <input type="file" id="html5-input" /> -->
                     <!-- Playlist shit -->
+                    <!-- remove ^ -->
                     <div id="visual-queue" class="vid-list-container">
                         <ul class="vid-list" id="vidlist">
                             <li class="vid-item">
@@ -220,6 +239,8 @@
                             </li>
                         </ul>
                     </div>
+                    <!-- remove ^ -->
+                    <!-- remove ^ -->
                     <div id="queue-arrows" class="arrows">
                         <div class="arrow-left">
                             <i class="fa fa-chevron-left fa-lg"></i>
@@ -229,16 +250,11 @@
                         </div>
                     </div>
                     <br/>
+                    <!-- remove ^ -->
 
                     <!-- HTML5 player input -->
                     <!-- <input type="file" id="html5-input" /> -->
                     <!-- <input type="Video" style="max-width: 200px; margin-right: .5rem; margin-bottom: .5rem; float: left;" class="form-control" id="inputVideoURL" placeholder="Direct URL to .mp4/.webm"> -->
-
-                    <!-- <p style="display: none" id="html5-message" class="lead">Video File Upload Not Yet Supported</p> -->
-                    <p style="display: none" id="beta-message" class="lead">Queue is currently only supported by YouTube</p>
-
-
-
                 </div>
 
                 <!-- /.col-lg-8 -->
@@ -260,6 +276,7 @@
                     <hr style="height:0pt; visibility:hidden;" />
                     <h5 style="color:gray;">Chatroom</h5>
 
+                    <!-- remove the invite ^ -->
                     <!-- Modal -->
                     <div id="inviteModal" class="modal fade" role="dialog">
                         <div class="modal-dialog">
@@ -285,9 +302,10 @@
 
                         </div>
                     </div>
+                    <!-- remove ^ -->
                     <!-- </div> -->
                     <!-- </div> -->
-
+                    <!-- Code for the chat messaging -->
                     <div id="messageArea" class="row">
                         <br/>
                         <!-- <h2 style="color:gray">Chat</h2> -->
@@ -312,57 +330,15 @@
             </div>
 
             <!-- /.row -->
-
+            <!-- remove ^ -->
             <!-- Call to Action Well -->
             <div class="card text-white bg-secondary my-4 text-center">
                 <div class="card-body">
                     <p class="text-white m-0">*The synchronization may not be perfect! It's a work in progress, submit an issue on github if you wish to submit a bug report/suggestion.</p>
                 </div>
             </div>
-
-            <!-- Content Row -->
-            <!-- <div class="row">
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h2 class="card-title">Card One</h2>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-primary">More Info</a>
-            </div>
-          </div>
-        </div> -->
-            <!-- /.col-md-4 -->
-            <!-- <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h2 class="card-title">Card Two</h2>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore voluptates quos eligendi labore.</p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-primary">More Info</a>
-            </div>
-          </div>
-        </div> -->
-            <!-- /.col-md-4 -->
-            <!-- <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h2 class="card-title">Card Three</h2>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-primary">More Info</a>
-            </div>
-          </div>
-        </div> -->
-            <!-- /.col-md-4 -->
-
-            <!-- </div> -->
-            <!-- /.row -->
-
-            <!-- <hr style="height:20pt; visibility:hidden;" /> -->
+            <!-- remove ^ -->
+            <!-- remove ^ -->
             <section id="about" class="bg-light">
                 <hr style="height:100pt; visibility:hidden;" />
 
@@ -379,8 +355,11 @@
                     </div>
                 </div>
             </section>
+                        <!-- remove ^ -->
+
             <hr style="height:20pt; visibility:hidden;" />
 
+                      
             <section id="contact" class="bg-light">
                 <hr style="height:100pt; visibility:hidden;" />
 
@@ -401,6 +380,7 @@
                 </div>
             </section>
             <hr style="height:50pt; visibility:hidden;" />
+                        <!-- remove ^ -->
 
         </div>
     </div>
@@ -435,21 +415,6 @@
             var $roomnum = $('#roomnum');
 
             var $vidlist = $('#vidlist');
-
-            //   function send_message() {
-            //       socket.emit('send message', $message.val());
-            //       $message.val('');
-            //   }
-            //
-            //   $(document).keyup(send_message());
-            //   $("input").keypress(function(event) {
-            //     if (event.which == 13) {
-            //         event.preventDefault();
-            //         send_message();
-            //     }
-            // });
-
-
             $messageForm.submit(function(e) {
                 e.preventDefault();
                 // console.log("Submitted");
@@ -468,6 +433,9 @@
                     console.log(last_div.innerHTML)
                     var last_user = ""
                     if (match != null) {
+                        // changes
+                // chage
+                
                         console.log("found the user!" + match[1])
                         last_user = match[1]
                     }
