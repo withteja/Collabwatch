@@ -55,7 +55,7 @@ socket.on('justPause', function(data) {
     console.log("hiIamPausing!")
     switch (currPlayer) {
         case 0:
-            player.pauseVideo()
+           player.pauseVideo()
             break;
         case 1:
             dailyPlayer.pause()
