@@ -96,7 +96,6 @@ socket.on('createYoutube', function(data) {
         currPlayer = 0
 
         // The visual queue
-        document.getElementById('visual-queue').style.display = 'block'
         document.getElementById('queue-arrows').style.display = 'block'
         document.getElementById('beta-message').style.display = 'none'
         document.getElementById('enqueueButton').style.display = 'inline-block'
@@ -144,13 +143,6 @@ socket.on('createDaily', function(data) {
         currPlayer = 1
 
         // disable for dm/vimeo
-        document.getElementById('visual-queue').style.display = 'none'
-        document.getElementById('queue-arrows').style.display = 'none'
-        document.getElementById('beta-message').style.display = 'block'
-        document.getElementById('enqueueButton').style.display = 'none'
-        document.getElementById('emptyButton').style.display = 'none'
-        document.getElementById('nextButton').style.display = 'none'
-        document.getElementById('loveButton').style.display = 'none'
         // document.getElementById('html5-input').style.display = 'none'
         document.getElementById('inputVideoId').placeholder = 'Video ID / URL'
         // document.getElementById('html5-message').style.display = 'none'
@@ -182,14 +174,6 @@ socket.on('createVimeo', function(data) {
         currPlayer = 2
 
         // disable for dm/vimeo
-        document.getElementById('visual-queue').style.display = 'none'
-        document.getElementById('queue-arrows').style.display = 'none'
-        document.getElementById('beta-message').style.display = 'block'
-        document.getElementById('enqueueButton').style.display = 'none'
-        document.getElementById('emptyButton').style.display = 'none'
-        document.getElementById('nextButton').style.display = 'none'
-        document.getElementById('loveButton').style.display = 'none'
-        // document.getElementById('html5-input').style.display = 'none'
         document.getElementById('inputVideoId').placeholder = 'Video ID / URL'
         // document.getElementById('html5-message').style.display = 'none'
 
@@ -215,62 +199,6 @@ socket.on('createHTML5', function(data) {
         var html5 = document.getElementById('HTML5Area');
         html5.style.display = 'block';
         currPlayer = 3
-
-
-        document.getElementById('visual-queue').style.display = 'none'
-        document.getElementById('queue-arrows').style.display = 'none'
-        document.getElementById('beta-message').style.display = 'block'
-        document.getElementById('enqueueButton').style.display = 'none'
-        document.getElementById('emptyButton').style.display = 'none'
-        document.getElementById('nextButton').style.display = 'none'
-        document.getElementById('loveButton').style.display = 'none'
-        // document.getElementById('html5-input').style.display = 'block'
-        document.getElementById('inputVideoId').placeholder = 'Direct mp4/webm URL'
-        // document.getElementById('html5-message').style.display = 'block'
-
         betaAlert()
     }
 });
-
-
-// changeSinglePlayer(roomnum, playerId){
-//
-// 	return new Promise((resolve, reject) => {
-//         switch(playerId) {
-//             case 0:
-//                 if (currPlayer != 0){
-//                     // var playerIn = document.getElementById("playerArea")
-//                     // console.log(playerIn.innerHTML)
-//                     // playerIn.innerHTML = "<iframe id=\"player\"allowfullscreen=\"0\"width=\"640\" height=\"360\"src=\"https://www.youtube.com/embed/M7lc1UVf-VE?enablejsapi=1\"frameborder=\"0\"style=\"border: solid 4px #37474F\"></iframe>"
-//                     // onYouTubeIframeAPIReady()
-//
-//                     var daily = document.getElementById('dailyArea');
-//                     daily.style.display='none';
-//
-//                     var you = document.getElementById('playerArea');
-//                     you.style.display='block';
-//                     currPlayer = 0
-//
-//                 }
-//                 break;
-//             case 1:
-//                 if (currPlayer != 1) {
-//                 //     var playerIn = document.getElementById("playerArea")
-//                 //     console.log(playerIn.innerHTML)
-//                 //     playerIn.innerHTML = "<iframe id=\"player-daily\" frameborder=\"0\" width=\"640\" height=\"360\"src=\"//www.dailymotion.com/embed/video/x26m1j4\"allowfullscreen allow=\"autoplay\"></iframe>"
-//
-//                     var you = document.getElementById('playerArea');
-//                     you.style.display='none';
-//
-//                     var daily = document.getElementById('dailyArea');
-//                     daily.style.display='block';
-//                     currPlayer = 1
-//                     console.log("hey i am number 1")
-//                 }
-//                 break;
-//             default:
-//                 console.log("Error invalid player id")
-//         }
-//       })
-//
-// }
