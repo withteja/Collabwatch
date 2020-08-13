@@ -176,7 +176,7 @@ io.sockets.on('connection', function(socket) {
             io.sockets.adapter.rooms['room-' + socket.roomnum].currPlayer = 0
             // Default video
             io.sockets.adapter.rooms['room-' + socket.roomnum].currVideo = {
-                yt: 'M7lc1UVf-VE',
+                yt: '0gxEPzdEqt0',
                 dm: 'x26m1j4',
                 vimeo: '76979871',
                 html5: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'
@@ -184,7 +184,7 @@ io.sockets.on('connection', function(socket) {
             // Previous Video
             io.sockets.adapter.rooms['room-' + socket.roomnum].prevVideo = {
                 yt: {
-                    id: 'M7lc1UVf-VE',
+                    id: '0gxEPzdEqt0',
                     time: 0
                 },
                 dm: {
