@@ -9,7 +9,6 @@ function playOther(roomnum) {
     });
 }
 
-//sass
 socket.on('justPlay', function(data) {
     console.log("currPlayer")
     switch (currPlayer) {
