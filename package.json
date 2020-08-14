@@ -1,5 +1,5 @@
 {
-  "name": "vynchronize",
+  "name": "Collabwatch",
   "version": "1.0.0",
   "description": "Video synchronization app",
   "main": "server.js",
@@ -8,9 +8,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kyle8998/Vynchronize.git"
+    "url": "git+https://github.com/withteja/unnamed.git"
   },
-  "author": "Kyle Lim",
+  "author": "Sai",
   "license": "ISC",
   "dependencies": {
     "dotenv": "8.1.0",
@@ -19,10 +19,7 @@
     "socket.io": "*",
     "ws": ">=3.3.1"
   },
-  "bugs": {
-    "url": "https://github.com/kyle8998/Vynchronize/issues"
-  },
-  "homepage": "https://github.com/kyle8998/Vynchronize#readme",
+
   "devDependencies": {
     "jshint": "^2.12.0"
   }
