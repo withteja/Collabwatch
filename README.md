@@ -7,9 +7,10 @@ CollabWatch will help solve this problem by mimicking interactions you would hav
 Furthermore, in many classes teachers ask students to discuss or solve a particular problem with other students sitting near them. These conversations are stimulating, fun, and help create bonds between students inside the classroom. However this is, unfortunately, not a possibility in online classes. But with CollabWatch this can become a reality.
 
 ## Features and how to use
-![Starting Page](https://github.com/withteja/unnamed/blob/master/img/3image.jpeg?raw=true)
+![Starting Page](https://github.com/withteja/unnamed/blob/master/img/2image.jpeg?raw=true)
+![Lecture Page](https://github.com/withteja/unnamed/blob/master/img/3image.jpeg?raw=true)
 
-![Lecture Page](https://github.com/withteja/unnamed/blob/master/img/2image.jpeg?raw=true)
+
 
 ## Further Work
 This project is not fully completed as we didnot have the necessary permissions and the APIs to use our university's website and because of time constraints. <br />
