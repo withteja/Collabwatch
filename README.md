@@ -11,7 +11,7 @@ On the starting page, there are two text fields-Name and Class ID. Enter your na
 In the final product, this page will not be present. Instead, there will be a link from school portals that will directly open the website which will show the lecture that the student is going to watch.
 ![Starting Page](https://github.com/withteja/unnamed/blob/master/img/2image.jpeg?raw=true)
 On this page, there is a video screen that is currently connected to YouTube APIs and is hosting the opening ceremony of HackThis. A chatbox is also included for the people watching the lecture to interact. A box shows who all are currently online and a textbox is provided to change the videos. This feature will be mostly useless but can be used when a group of students are rewatching lectures in their group study. <br />
-In the final product, we will acquire APIs of school portals and link actual lectures to the video screen.
+In the final product, we will acquire APIs of school portals and link actual lectures to the video screen and we will also have randomized people in certain groups.
 ![Lecture Page](https://github.com/withteja/unnamed/blob/master/img/3image.jpeg?raw=true)
 
 ## Further Work
