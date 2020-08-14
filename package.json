@@ -8,9 +8,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kyle8998/Collabwatch.git"
+    "url": "git+https://github.com/withteja/unnamed.git"
   },
-  "author": "Kyle Lim",
+  "author": "Sai",
   "license": "ISC",
   "dependencies": {
     "dotenv": "8.1.0",
@@ -19,10 +19,7 @@
     "socket.io": "*",
     "ws": ">=3.3.1"
   },
-  "bugs": {
-    "url": "https://github.com/kyle8998/Collabwatch/issues"
-  },
-  "homepage": "https://github.com/kyle8998/Collabwatch#readme",
+
   "devDependencies": {
     "jshint": "^2.12.0"
   }
