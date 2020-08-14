@@ -8,9 +8,12 @@ Furthermore, in many classes teachers ask students to discuss or solve a particu
 
 ## Features and how to use
 ![Starting Page](https://github.com/withteja/unnamed/blob/master/img/2image.jpeg?raw=true)
+On the starting page there are two text fields-Name and Class ID. Enter your name and create any random class ID to go to the next page.  <br />
+In the final product, this page will not be present. Instead there will be a link from school portals that will directlythe website which will show the lecture that the student is going to watch.
+
 ![Lecture Page](https://github.com/withteja/unnamed/blob/master/img/3image.jpeg?raw=true)
-
-
+On this page, there is a video screen that is currently connected to YouTube APIs and is hosting the opening ceremoney of HackThis. A chatbox is also included for the people watching the lecture to interact. A box shows who all are currently online and a textbox is provided to change the videos. This feature will be mostly useless but can be used when a group of students are rewatching lectures in their group study. <br />
+In the final product, we will acquire APIs of school portals and link actual lectures to the video screen. 
 
 ## Further Work
 This project is not fully completed as we didnot have the necessary permissions and the APIs to use our university's website and because of time constraints. <br />
