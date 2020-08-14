@@ -26,8 +26,9 @@ The project in the future will include:<br />
 - They will also be able to mute themselves and change speaker settings of the other peers on the "table" to cutomise their ideal environment for learning.
 - A doodle space for the people on the same "table" to explain ideas that they couldn't explain well enough verbally.
 
+This is the Figma [link](https://www.figma.com/file/J7t4mUuxfvkVvuusGHFeFS/Hackathon?node-id=0%3A1) to viewing the UI of the future project.
+
 ## Expected Clients
 This product is useful for all students but more useful for middle-schoolers, high-schoolers and college students than it is for kidergarteners. It is especially useful for students that are enrolled in Distance Learning Programs or other online courses. 
 
-## Potential Business Plan
 ---
