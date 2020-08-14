@@ -180,14 +180,12 @@
      padding: 9px;
      border-radius: 3px;
  }
-
  .chat {
      width: 500px;
      height: 450px;
      overflow: scroll;
      border: 1px solid gray;
  }
-
  .message-well {
      margin-bottom: 8px !important;
  }
