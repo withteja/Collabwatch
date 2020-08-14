@@ -46,6 +46,7 @@
  html, body {
      max-width: 100%;
      overflow-x: hidden;
+     background:#111;
  }
 
  .headsize {
@@ -333,7 +334,7 @@
  }
 
  .vid-item .desc {
-     color: #21A1D2;
+     color: #1d3254;
      font-size: 15px;
      margin-top: 5px;
  }
