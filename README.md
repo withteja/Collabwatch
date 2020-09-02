@@ -1,5 +1,5 @@
 # CollabWatch
-[CollabWatch](https://collabwatch.herokuapp.com/) is a website that allows you to watch class lectures with your friends or with randomized strangers.
+[CollabWatch](https://collab-watch.com) is a website that allows you to watch class lectures with your friends or with randomized strangers.
 
 ## Problem 
 One of the biggest problems with online learning is that there is not much human interaction involved, which leads students to feel disconnected, isolated and like they are not part of a community. This results in them not watching lectures and also lowers grades and productivity. <br />
