@@ -221,13 +221,13 @@
     <!-- Footer -->
     <footer id="footer" class="py-5 bg-dark footer">
         <div class="container">
-            <p class="m-0 text-center text-white">CollabWatch 2020 HackIllinois</p>
+            <p class="m-0 text-center text-white">CollabWatch 2020 HackMadison</p>
         </div>
         <!-- /.container -->
     </footer>
 
     <script>
-        var socket = io.connect();
+        var socket = io.connect('http://ec2-52-14-112-85.us-east-2.compute.amazonaws.com:3000/');
         var roomnum = 1
         var id = "0gxEPzdEqt0"
         var username = ""
