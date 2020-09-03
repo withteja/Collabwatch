@@ -1,5 +1,10 @@
 # CollabWatch
-[CollabWatch](https://collab-watch.com) is a website that allows you to watch class lectures with your friends or with randomized strangers.
+#Hosted with AmazonEC2 istance and heroku
+links for both websites
+[AMAZON EC2](http://18.216.235.26:3000/)
+[Heroku](collabwatch.herokuapp.com)
+
+[CollabWatch](collabwatch.herokuapp.com) is a website that allows you to watch class lectures with your friends or with randomized strangers.
 
 ## Problem 
 One of the biggest problems with online learning is that there is not much human interaction involved, which leads students to feel disconnected, isolated and like they are not part of a community. This results in them not watching lectures and also lowers grades and productivity. <br />
