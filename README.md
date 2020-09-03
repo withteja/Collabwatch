@@ -2,6 +2,7 @@
 #Hosted with AmazonEC2 istance and heroku
 links for both websites
 [AMAZON EC2](http://18.216.235.26:3000/)
+
 [Heroku](collabwatch.herokuapp.com)
 
 [CollabWatch](collabwatch.herokuapp.com) is a website that allows you to watch class lectures with your friends or with randomized strangers.
