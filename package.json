@@ -1,7 +1,7 @@
 {
   "name": "Collabwatch",
   "version": "1.0.0",
-  "description": "Video synchronization app",
+  "description": "Collab Watch",
   "main": "server.js",
   "scripts": {
     "test": "jshint test.js"
